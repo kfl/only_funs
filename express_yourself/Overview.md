@@ -1,6 +1,7 @@
 What are we trying to make
 ==========================
 
+```
 40 + 2     ~~> 42
 2*20 + 2   ~~> 42
 x * 20 + x ~~> 42  [ x -> 2 ]
@@ -10,8 +11,8 @@ x * 20 + x ~~> 42  [ x -> 2 ]
 
 x + y ~~> 42 [ x -> 2; y -> 40 ]
 
-if (let x = 34 in x + x) then 69 else 420
-
+if (let x = 34 in x + x) then 69 else 420 ~~> 69
+```
 
 Future
 ======
