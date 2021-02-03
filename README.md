@@ -3,7 +3,7 @@ Only Funs
 
 Companion code and material for the *Only Funs* streaming series.
 
-Last Stream
+Next Stream
 -----------
 
-Friday, January 22, 15:00 (CET)
+Thursday, February 4, 15:00 (CET)
