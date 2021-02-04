@@ -69,7 +69,7 @@ Token
 The parse code for a token `"c"` depends on its position `eJ` in the sequence
 `e1 ... eM`.
 
-If the tOKEN is *not* the first symbol `e1`, then we must
+If the TOKEN is *not* the first symbol `e1`, then we must
 check that `c` is the current symbol in the token list `ts`,
 and, if so, read the next token
 

@@ -13,7 +13,7 @@ x * 20 + x ~~> 42  [ x -> 2 ]
 
 x + y ~~> 42 [ x -> 2; y -> 40 ]
 
-if (let x = 34 in x + x) then 69 else 420 ~~> 69
+(if (let x = 34 in x + x) then 69 else 420 + 1) ~~> 69
 ```
 
 Parse
@@ -48,17 +48,23 @@ E  ::= Num
 ```
 
 ```
+P    ::= 'if' E 'then' E 'else' E
+       | 'let' Id '=' E 'in' E
+       | E
 E    ::= E '+' T | E '-' T | T
 T    ::= T '*' F | T '/' F | F
-F    ::= Num | Id | '(' E ')'
+F    ::= Num | Id | '(' P ')'
 ```
 
 ```
+P     ::= 'if' E 'then' E 'else' E
+        | 'let' Id '=' E 'in' E
+        | E
 E     ::=  T  Eopt
 Eopt  ::=  '+' T Eopt | '-' T Eopt | ε
 T     ::=  F Topt
 Topt  ::=  '*' F Topt | '/' F Topt | ε
-F     ::=  Num | Id | '(' E ')'
+F     ::=  Num | Id | '(' P ')'
 ```
 
 
